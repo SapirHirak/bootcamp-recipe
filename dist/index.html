@@ -4,7 +4,7 @@
 <head>
     <title>recepieeeee</title>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 
 <body>
@@ -12,16 +12,15 @@
         <input id='input' type="text" placeholder="input of team">
         <button id='button-team' onclick=button()>Search!</button>
     </div>
-    
+
     <div class="recipeContainer"></div>
 
     <script id="recipe-template" type='text/x-handlebars-template'>
             {{#each players}}
                 <div class="players">
-                    <div>{{title}}</div>
-                     <div><img src="{{thumbnail}}"> </div>
-                    <div><a href="{{href}}">Visit Youtube :)</a></div>
-                   <div> {{ingredients}}</div>
+                    <div><a href="{{href}}">{{title}}</a></div>
+                     <div><img src="{{thumbnail}}"  height="100" width="100"> </div>
+                   <div> <p>The ingredients:</p>{{ingredients}}</div>
                 </div>
                
             {{/each}}
@@ -30,6 +29,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js" crossorigin="anonymous"></script>
+    <!-- <script src="rendrer.js"></script> -->
     <script src="main.js"></script>
 </body>
 
