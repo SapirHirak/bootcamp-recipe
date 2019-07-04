@@ -21,10 +21,9 @@ app.get('/recipes/:ingredient', function (req, respond) {
         let data = JSON.parse( res.body).results
         //players = players.filter(p => p.teamId == teamToIDs[player] & p.isActive)
         for (let u of data) {
-            releventData.push({ title: u.title })
+            releventData.push({ title: u.title} , {thumbnail: u.thumbnail} , {href: u.href} , {ingredients: u.ingredients} )
         }
-  
-    respond.send(data)
+    respond.send(releventData)
 })
 })
 

@@ -1,0 +1,44 @@
+body {
+    background-image: url("https://media.giphy.com/media/11sFH7QYAzLE0E/giphy.gif")
+}
+
+.recipeContainer {
+    font-family: Impact;
+    font-size: 1em;
+    font-style: oblique;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 26px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 60px;
+    text-align: center;
+    
+    
+}
+
+.players {
+    font-family: Impact;
+    font-size: 2em;
+    font-style: oblique;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 15px;
+    padding-top: 8px;
+    background-image: linear-gradient(120deg, #978161 0%, #a85924 100%);
+    
+}
+
+#input{
+    text-align: center;
+    position:relative;
+	font-size: 1.5em;
+	background: linear-gradient(21deg, #9b5962, #ea1b1b);
+	padding: 3px;
+	display: inline-block;
+	border-radius: 9999em;
+	
+}

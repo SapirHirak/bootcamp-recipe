@@ -1,8 +1,8 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>Playerssssssssss</title>
+    <title>recepieeeee</title>
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -10,18 +10,18 @@
 <body>
     <div>
         <input id='input' type="text" placeholder="input of team">
-        <button id='button-team' onclick=button()>Enter!</button>
+        <button id='button-team' onclick=button()>Search!</button>
     </div>
     
-    <div class="playersContainer"></div>
+    <div class="recipeContainer"></div>
 
-    <script id="player-template" type='text/x-handlebars-template'>
+    <script id="recipe-template" type='text/x-handlebars-template'>
             {{#each players}}
                 <div class="players">
-                    <div>{{firstName}}</div>
-                     <div> {{lastName}}</div>
-                    <div>{{pos}}</div>
-                   <div> <img src="https://nba-players.herokuapp.com/players/{{lastName}}/{{firstName}}"></div>
+                    <div>{{title}}</div>
+                     <div><img src="{{thumbnail}}"> </div>
+                    <div><a href="{{href}}">Visit Youtube :)</a></div>
+                   <div> {{ingredients}}</div>
                 </div>
                
             {{/each}}
@@ -33,4 +33,4 @@
     <script src="main.js"></script>
 </body>
 
-</html> -->
+</html>
